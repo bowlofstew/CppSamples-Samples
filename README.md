@@ -73,6 +73,7 @@ file name to change, then it should be a new sample.
 Every sample `.cpp` file must be structured as follows:
 
     // Title
+    // Tag1, Tag2
 
     Sample code
 
@@ -84,7 +85,9 @@ Every sample `.cpp` file must be structured as follows:
 
     Hidden code
 
-The title comment must be a single line.
+The title comment and tags comment must each be a single line. The
+tags comment is optional. The tags line should be a comma separated
+list of tags.
 
 The intent and description are processed as an extended form of
 [Markdown](http://daringfireball.net/projects/markdown/), which means
@@ -105,7 +108,7 @@ The sample description is processed as a form of Markdown with the
 following extensions:
 
 1.  Line references are added with the `[XX-YY]` syntax. The `-YY` is
-    optional and used to denote a range of lines. An excalamation mark
+    optional and used to denote a range of lines. An exclamation mark
     after the opening bracket causes the output to be capitalized.
 
     The numbers provided should denote line numbers in the original
@@ -131,7 +134,7 @@ There are a few simple guidelines:
 -   Avoid using `auto` for two reasons: firstly, the samples are
     intended to be used as a reference for beginner C++ developers,
     and the types involved are important to help with their
-    understanding; secondly, a concensus has not been reached on when
+    understanding; secondly, a consensus has not been reached on when
     it is appropriate to use `auto`.
 
 -   Use the uniform initialisation syntax where possible.

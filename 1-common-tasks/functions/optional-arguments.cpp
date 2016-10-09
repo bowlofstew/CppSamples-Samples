@@ -1,4 +1,5 @@
 // Optional arguments
+// Experimental
 
 #include <experimental/optional>
 
@@ -20,11 +21,15 @@ int main()
 
 // Allow argument values to be omitted when calling a function.
 // 
-// The function `foo`, on [8-11], takes three arguments, two of which
+// **Note**: This sample uses experimental entities from the Library
+// Fundamentals TS that demonstrate likely upcoming features in C++
+// but should not be used in production code.
+// 
+// The function `foo`, on [9-12], takes three arguments, two of which
 // have type
 // [`std::experimental::optional`](cpp/experimental/optional) (from
 // the Library Fundamentals TS). This allows the value of those
-// arguments to be omitted, as shown on [16-18], where
+// arguments to be omitted, as shown on [17-19], where
 // [`std::experimental::nullopt`](cpp/experimental/optional/nullopt)
 // represents no value.
 // 
@@ -36,3 +41,9 @@ int main()
 // If you are constructing an object with a complex combinatorial set
 // of optional arguments, consider using the
 // [builder pattern](/patterns/builder.html).
+// 
+// **Note**: `std::experimental::optional` and
+// `std::experimental::nullopt` are part of the Library Fundamentals
+// Technical Specification, which provides experimental features that
+// may soon be introduced to the C++ standard. They should not be used
+// in production code.

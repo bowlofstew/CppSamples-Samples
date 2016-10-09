@@ -1,7 +1,7 @@
 // Class template SFINAE
+// C++11
 
 #include <type_traits>
-#include <limits>
 
 template <typename T, typename Enable = void>
 class foo;
